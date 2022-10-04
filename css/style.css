@@ -170,6 +170,8 @@ button {
     letter-spacing: 0.02em;
     color: var(--main-link-color);
     display: block;
+    display: flex;
+    align-items: center;
 }
 
 .header-link:hover,
@@ -211,10 +213,15 @@ button {
 /* < !-------------HERO--------- !> */
 
 .hero {
+    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-backraund.jpg);
     background-color: var(--main-background);
     text-align: center;
     padding: 200px 0px;
+    width: 1600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero .container {}
@@ -344,7 +351,6 @@ button {
 
 .team {
     background: #F5F4FA;
-    padding: 94px 0px;
 }
 
 .team-title {
@@ -403,21 +409,9 @@ button {
     gap: 10px;
 }
 
-.team-item-icon {
-    /* display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--main-btn-color);
-        color: #afb1b8;
-    
-        border-radius: 50%;
-        width: 44px;
-        height: 44px; */
-}
-
 .team-address-icon {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     background: var(--main-btn-color);
     color: #afb1b8;
@@ -429,7 +423,8 @@ button {
 
 .team-icon {
     fill: currentColor;
-    margin: 12px;
+    width: 20px;
+    height: 20px;
 }
 
 .team-address-icon:hover,
@@ -502,7 +497,7 @@ button {
 }
 
 .footer-container-icon {
-
+    margin-left: 70px;
 }
 
 .footer-list-icon {
@@ -537,6 +532,7 @@ button {
 .footer-icon {
     fill: currentColor;
 }
+
 .footer-address-icon:hover,
 .footer-address-icon:focus {
     background: #2196f3;
@@ -544,7 +540,6 @@ button {
 
 .footer-thumb {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 
@@ -590,6 +585,8 @@ button {
 .navi-btn:focus {
     background-color: #2196f3;
     color: var(--main-btn-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -604,13 +601,6 @@ button {
 
 .portfolio {
     padding: 94px 0;
-}
-
-
-.navi-btn:hover,
-.navi-btn:focus {
-    background-color: var(--main-order-service);
-    color: #ffffff;
 }
 
 .portfolio-title {
@@ -636,6 +626,15 @@ button {
 
 }
 
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-images {}
 
 .portfolio-sub-title {
@@ -658,10 +657,12 @@ button {
 
 /*--------------------------------------regular customers----------------------------------------*/
 
-.customers {}
+.customers {
+    padding: 94px 0;
+
+}
 
 .customers-title {
-    padding-top: 94px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -678,8 +679,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
 }
 
 .customers-link-logo {
@@ -688,9 +688,9 @@ button {
     height: 92px;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
     color: #afb1b8;
     border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 .costomers-img-logo {
